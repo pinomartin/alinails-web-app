@@ -43,18 +43,18 @@
       },
       "gelPolish": {
         "title": "Soft Gel",
-        "description": "Long-lasting soft gel with a perfect finish",
+        "description": "Long-lasting soft gel with a perfect finish.",
         "price": "From $25"
       },
       "acrylicNails": {
         "title": "Acrylic Nails",
-        "description": "Full set of acrylic nails with design options",
-        "price": "From $60"
+        "description": "Full set of acrylic nails with design options.",
+        "price": "From $28"
       },
       "eyelashExtensions": {
         "title": "Eyelash Extensions",
-        "description": "Classic, hybrid, or volume lash extensions",
-        "price": "From $80"
+        "description": "Classic, hybrid, or volume lash extensions.",
+        "price": "From $30"
       },
       "nailRemoval": {
         "title": "Acrylic or Gel Polish Removal",
@@ -100,11 +100,11 @@
     "title": "Visit Us",
     "subtitle": "We're conveniently located in the heart of the city",
     "contactInfo": "Contact Information",
-    "address": "123 Beauty Street, City Center, 10001",
+    "address": "Av. España, 1, 29680 Estepona, Málaga",
     "phone": "+34 655 71 91 45",
     "email": "alicianails.es@gmail.com",
     "hours": {
-      "weekdays": "Monday - Friday: 9am - 7pm",
+      "weekdays": "Monday - Saturday: 8am - 8pm",
       "saturday": "Saturday: 10am - 6pm",
       "sunday": "Sunday: Closed"
     },
@@ -112,7 +112,7 @@
     "mapLoading": "Map Loading..."
   },
   "footer": {
-    "slogan": "Elevating beauty, one client at a time",
+    "slogan": "Beauty and care in every service",
     "rights": "All rights reserved.",
     "instagram": "Instagram",
     "facebook": "Facebook",

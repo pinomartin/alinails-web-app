@@ -43,18 +43,18 @@
       },
       "gelPolish": {
         "title": "Soft Gel",
-        "description": "Esmalte de gel de larga duración con un acabado perfecto",
+        "description": "Esmalte de gel de larga duración con un acabado perfecto.",
         "price": "Desde 25€"
       },
       "acrylicNails": {
         "title": "Uñas Acrílicas",
-        "description": "Set completo de uñas acrílicas con opciones de diseño",
-        "price": "Desde 25€"
+        "description": "Set completo de uñas acrílicas con opciones de diseño.",
+        "price": "Desde 28€"
       },
       "eyelashExtensions": {
         "title": "Extensiones de Pestañas",
-        "description": "Extensiones de pestañas clásicas, híbridas o volumen",
-        "price": "Desde 80€"
+        "description": "Extensiones de pestañas clásicas, híbridas o volumen.",
+        "price": "Desde 30€"
       },
       "nailRemoval": {
         "title": "Retiro de acrílico o semipermanente",
@@ -111,7 +111,7 @@
     "mapLoading": "Cargando Mapa..."
   },
   "footer": {
-    "slogan": "Elevando la belleza, un cliente a la vez",
+    "slogan": "Belleza y cuidado en cada servicio",
     "rights": "Todos los derechos reservados.",
     "instagram": "Instagram",
     "facebook": "Facebook",

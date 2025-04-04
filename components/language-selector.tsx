@@ -24,7 +24,6 @@ export default function LanguageSelector() {
           className={`flex items-center gap-2 ${language === "en" ? "bg-pink-50 font-medium" : ""}`}
         >
           <div className="relative h-5 w-5 overflow-hidden rounded-full">
-            <Image src="/placeholder.svg?height=20&width=20" alt="English" fill className="object-cover" />
             <span className="absolute inset-0 flex items-center justify-center text-[8px]">🇺🇸</span>
           </div>
           <span>{t("language.en")}</span>
@@ -34,7 +33,6 @@ export default function LanguageSelector() {
           className={`flex items-center gap-2 ${language === "es" ? "bg-pink-50 font-medium" : ""}`}
         >
           <div className="relative h-5 w-5 overflow-hidden rounded-full">
-            <Image src="/placeholder.svg?height=20&width=20" alt="Español" fill className="object-cover" />
             <span className="absolute inset-0 flex items-center justify-center text-[8px]">🇪🇸</span>
           </div>
           <span>{t("language.es")}</span>

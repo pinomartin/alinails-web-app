@@ -30,7 +30,13 @@ export default function Home() {
 
   return (
     <LanguageWrapper>
-      <main className="min-h-screen bg-white">
+      <a 
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white"
+      >
+        Skip to main content
+      </a>
+      <main className="min-h-screen bg-white" role="main" id="main-content">
         {/* WhatsApp Button */}
         <a
           href={`https://wa.me/34655719145?text=${encodeURIComponent(
@@ -79,7 +85,7 @@ export default function Home() {
                 Ali Nails
               </h1>
             </div>
-            <nav className="hidden md:block">
+            <nav className="hidden md:block" role="navigation" aria-label="Main navigation">
               <ul className="flex gap-8">
                 <li>
                   <a
@@ -240,7 +246,7 @@ export default function Home() {
                   <div className="flex gap-4">
                     <div className="flex flex-col items-center">
                       <span className="text-2xl font-bold text-pink-400">
-                        10+
+                        20+
                       </span>
                       <span className="text-sm text-gray-500">
                         {t("about.stats.experience")}
@@ -256,7 +262,7 @@ export default function Home() {
                     </div>
                     <div className="flex flex-col items-center">
                       <span className="text-2xl font-bold text-pink-400">
-                        20+
+                        10+
                       </span>
                       <span className="text-sm text-gray-500">
                         {t("about.stats.services")}
@@ -344,7 +350,7 @@ function ServicesSection() {
       title: t("services.items.pedicure.title"),
       description: t("services.items.pedicure.description"),
       price: t("services.items.pedicure.price"),
-      icon: "🎨",
+      icon: "🦶🏼",
     },
   ];
 
@@ -613,6 +619,9 @@ function Footer() {
           <div className="mt-8 border-t border-gray-800 pt-8 text-center">
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Ali Nails. {t("footer.rights")}
+            </p>
+            <p className="text-sm text-gray-400">
+             <a target="_blank" href="https://clickandfix.netlify.app">Click & Fix</a>
             </p>
           </div>
         </div>

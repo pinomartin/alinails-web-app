@@ -31,23 +31,29 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
   }
 
   return (
-    <div className="relative h-[300px] md:h-[400px] lg:h-[500px] w-full">
-      <div className="relative h-full w-full overflow-hidden rounded-lg">
+    <div className="relative w-full max-w-4xl mx-auto px-4">
+      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-lg bg-white">
         <div
-          className="h-full w-full transition-transform duration-500 ease-out"
+          className="absolute h-full w-full transition-transform duration-500 ease-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           <div className="flex h-full">
             {images.map((image, index) => (
-              <div key={index} className="relative h-full min-w-full flex-shrink-0">
-                <Image
-                  src={image || "/placeholder.svg"}
-                  alt={`Gallery image ${index + 1} - Nail and lash work example`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 50vw, 1200px"
-                  priority={index === 0}
-                />
+              <div 
+                key={index} 
+                className="relative h-full w-full flex-shrink-0 flex items-center justify-center"
+              >
+                <div className="relative h-full w-full">
+                  <Image
+                    src={image || "/placeholder.svg"}
+                    alt={`Gallery image ${index + 1} - Nail and lash work example`}
+                    fill
+                    style={{ objectFit: 'contain' }}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    priority={index === 0}
+                    quality={100}
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -57,7 +63,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
       <Button
         variant="outline"
         size="icon"
-        className="absolute left-4 top-1/2 h-10 w-10 -translate-y-1/2 transform rounded-full bg-white/80 text-gray-800 backdrop-blur-sm hover:bg-white"
+        className="absolute left-6 top-1/2 h-10 w-10 -translate-y-1/2 transform rounded-full bg-white/80 text-gray-800 backdrop-blur-sm hover:bg-white"
         onClick={goToPrevious}
         aria-label={t("gallery.previous")}
       >
@@ -67,7 +73,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
       <Button
         variant="outline"
         size="icon"
-        className="absolute right-4 top-1/2 h-10 w-10 -translate-y-1/2 transform rounded-full bg-white/80 text-gray-800 backdrop-blur-sm hover:bg-white"
+        className="absolute right-6 top-1/2 h-10 w-10 -translate-y-1/2 transform rounded-full bg-white/80 text-gray-800 backdrop-blur-sm hover:bg-white"
         onClick={goToNext}
         aria-label={t("gallery.next")}
       >

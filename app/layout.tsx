@@ -11,12 +11,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "AliNails | Premium Nail and Eyelash Services",
-  description: "Premium nail and eyelash extension services tailored to enhance your natural beauty",
+  title: "Ali Nails",
+  description: "Professional nail salon services in [your location]. Specializing in manicures, pedicures, nail art and more.",
   keywords: "nail salon, eyelash extensions, beauty salon, manicure, pedicure, gel nails, acrylic nails",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_ES",
     url: "https://beautylashandnail.com",
     title: "AliNails | Premium Nail and Eyelash Services",
     description: "Premium nail and eyelash extension services tailored to enhance your natural beauty",

@@ -46,7 +46,7 @@ export default function BookingForm() {
     { value: "acrylicNails", label: t("services.items.acrylicNails.title") },
     { value: "eyelashExtensions", label: t("services.items.eyelashExtensions.title") },
     { value: "nailRemoval", label: t("services.items.nailRemoval.title") },
-    { value: "Pedicure", label: t("services.items.Pedicure.title") },
+    { value: "Pedicure", label: t("services.items.pedicure.title") },
   ]
 
   const timeSlots = [
