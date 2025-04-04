@@ -14,6 +14,7 @@ import MobileMenu from "@/components/mobile-menu";
 import BookingForm from "@/components/booking-form";
 import { useTranslation } from "@/hooks/use-translation";
 import LOGO from "@/public/logo.jpg";
+import HERO from "@/public/img/hero/hero.jpg";
 import NAIL2 from "@/public/img/nails/02.jpg";
 import NAIL3 from "@/public/img/nails/03.jpg";
 import NAIL4 from "@/public/img/nails/04.jpg";
@@ -164,20 +165,20 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="relative h-[80vh] w-full overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-100/90 to-blue-100/90"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Nail and Lash Services - Beautiful manicure and eyelash extensions"
+            src={HERO}
+            alt="https://unsplash.com/photos/persons-hand-on-white-textile-SyCC0GQi5S4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"
             fill
-            className="object-cover"
+            className="object-cover brightness-75"
             priority
             sizes="100vw"
           />
           <div className="container relative mx-auto flex h-full flex-col items-center justify-center px-4 text-center">
-            <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-6xl">
+            <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-6xl text-white">
               {t("hero.title")}
             </h1>
-            <p className="mb-8 max-w-2xl text-lg text-gray-700">
+            <p className="mb-8 max-w-2xl text-lg text-white">
               {t("hero.subtitle")}
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
@@ -234,6 +235,8 @@ export default function Home() {
                   </h3>
                   <p className="mb-4 text-gray-600">{t("about.paragraph1")}</p>
                   <p className="mb-6 text-gray-600">{t("about.paragraph2")}</p>
+                  <p className="mb-6 text-gray-600">{t("about.paragraph3")}</p>
+                  <p className="mb-6 text-gray-600">{t("about.paragraph4")}</p>
                   <div className="flex gap-4">
                     <div className="flex flex-col items-center">
                       <span className="text-2xl font-bold text-pink-400">
@@ -332,15 +335,15 @@ function ServicesSection() {
       icon: "👁️",
     },
     {
-      title: t("services.items.lashLiftTint.title"),
-      description: t("services.items.lashLiftTint.description"),
-      price: t("services.items.lashLiftTint.price"),
+      title: t("services.items.nailRemoval.title"),
+      description: t("services.items.nailRemoval.description"),
+      price: t("services.items.nailRemoval.price"),
       icon: "🌟",
     },
     {
-      title: t("services.items.nailArt.title"),
-      description: t("services.items.nailArt.description"),
-      price: t("services.items.nailArt.price"),
+      title: t("services.items.pedicure.title"),
+      description: t("services.items.pedicure.description"),
+      price: t("services.items.pedicure.price"),
       icon: "🎨",
     },
   ];
@@ -412,21 +415,21 @@ function TestimonialsSection() {
       name: "Sarah M.",
       text: "Alicia is amazing! My nails have never looked better. The salon is clean, modern, and so relaxing.",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
+      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
     {
       key: "jessica",
       name: "Jessica T.",
       text: "I've been getting my lashes done here for months. The results are always perfect and last so long!",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
+      image: "https://plus.unsplash.com/premium_photo-1683817397904-d4465651a071?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
     {
       key: "emma",
       name: "Emma L.",
       text: "Best nail salon in town! The attention to detail is incredible and the staff is so friendly.",
       rating: 5,
-      image: "/placeholder.svg?height=80&width=80",
+      image: "https://plus.unsplash.com/premium_photo-1668485966810-bcaa10f47781?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
   ];
 
@@ -472,14 +475,16 @@ function LocationSection() {
           </div>
           <div className="flex flex-col gap-8 md:flex-row">
             <div className="w-full md:w-1/2">
-              <div className="h-80 w-full overflow-hidden rounded-lg bg-gray-200">
-                {/* Map placeholder - would be replaced with an actual map component */}
-                <div className="flex h-full w-full items-center justify-center">
-                  <MapPin className="h-12 w-12 text-gray-400" />
-                  <span className="ml-2 text-gray-500">
-                    {t("location.mapLoading")}
-                  </span>
-                </div>
+              <div className="h-80 w-full overflow-hidden rounded-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3206.9576247604544!2d-5.151799224137437!3d36.42772647237425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cdf0f57937883%3A0x2a2c25cc0c522d55!2sAv.%20Espa%C3%B1a%2C%201%2C%2029680%20Estepona%2C%20M%C3%A1laga%2C%20Spain!5e0!3m2!1sen!2s!4v1709835144335!5m2!1sen!2s"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
             <div className="w-full md:w-1/2">
@@ -507,7 +512,7 @@ function LocationSection() {
                     <div className="flex items-center">
                       <Mail className="mr-3 h-5 w-5 text-pink-400" />
                       <a
-                        href="mailto:info@beautylashandnail.com"
+                        href="mailto:alicianails.es@gmail.com"
                         className="text-gray-600 hover:text-pink-400 transition-colors"
                       >
                         {t("location.email")}
@@ -517,7 +522,6 @@ function LocationSection() {
                       <Clock className="mr-3 h-5 w-5 text-pink-400" />
                       <div className="text-gray-600">
                         <p>{t("location.hours.weekdays")}</p>
-                        <p>{t("location.hours.saturday")}</p>
                         <p>{t("location.hours.sunday")}</p>
                       </div>
                     </div>

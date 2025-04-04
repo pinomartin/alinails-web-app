@@ -21,8 +21,10 @@
   "about": {
     "title": "Un poco sobre mi",
     "subtitle": "Apasionada Por La Belleza",
-    "paragraph1": "Con más de 10 años de experiencia en la industria de la belleza, Alicia ha dominado el arte del diseño de uñas y las extensiones de pestañas. Su pasión por la belleza y atención al detalle asegura que cada cliente se vaya sintiéndose confiada y hermosa.",
-    "paragraph2": "Alicia actualiza continuamente sus habilidades con las últimas técnicas y tendencias, brindando servicios innovadores y de alta calidad a sus clientes. Ella cree que los tratamientos de belleza deben ser una experiencia relajante y agradable, por lo que ha creado un ambiente sereno y acogedor para todos sus clientes.",
+    "paragraph1": "Hola a tod@s, mi nombre es Alicia y el mundo de la estética siempre ha sido mi pasión.",
+    "paragraph2": "Hace más de 20 años inicié este camino, y con orgullo puedo decir que amo mi trabajo. Me especializo en manicura, maquillaje y extensiones de pestañas, y recientemente he comenzado a formarme en micropigmentación para seguir ofreciendo lo mejor a mis clientas. Me encanta mantenerme en constante aprendizaje y renovarme con las últimas técnicas para brindar un servicio de calidad.",
+    "paragraph3": "Para mí, la belleza es más que un simple detalle, es una forma de expresión y cuidado personal. Disfruto ver cómo cada persona se siente más segura y feliz con cada pequeño cambio. Soy una persona amable y cercana, y siempre doy lo mejor de mí para que cada visita sea una experiencia especial.",
+    "paragraph4": "¡Espero verte pronto para realzar tu belleza y mimarte como te mereces! ",
     "stats": {
       "experience": "Años de Experiencia",
       "clients": "Clientes Satisfechos",
@@ -35,33 +37,33 @@
     "bookNow": "Reservar Ahora",
     "items": {
       "manicure": {
-        "title": "Manicura",
-        "description": "Manicura clásica con cuidado de cutículas y esmalte",
-        "price": "Desde 35€"
+        "title": "Esmaltado semipermanente",
+        "description": "Manicura con cuidado de cutículas y aplicación de esmalte semipermanente de larga duración.",
+        "price": "Desde 15€"
       },
       "gelPolish": {
-        "title": "Esmalte de Gel",
+        "title": "Soft Gel",
         "description": "Esmalte de gel de larga duración con un acabado perfecto",
-        "price": "Desde 45€"
+        "price": "Desde 25€"
       },
       "acrylicNails": {
         "title": "Uñas Acrílicas",
         "description": "Set completo de uñas acrílicas con opciones de diseño",
-        "price": "Desde 60€"
+        "price": "Desde 25€"
       },
       "eyelashExtensions": {
         "title": "Extensiones de Pestañas",
         "description": "Extensiones de pestañas clásicas, híbridas o volumen",
         "price": "Desde 80€"
       },
-      "lashLiftTint": {
-        "title": "Lifting y Tinte de Pestañas",
-        "description": "Realce natural de pestañas con rizo y color",
-        "price": "Desde 65€"
+      "nailRemoval": {
+        "title": "Retiro de acrílico o semipermanente",
+        "description": "Eliminación cuidadosa de esmalte semipermanente o acrílico sin dañar la uña natural.",
+        "price": "Desde 5€"
       },
-      "nailArt": {
-        "title": "Arte de Uñas",
-        "description": "Diseños personalizados y arte en uñas",
+      "pedicure": {
+        "title": "Esmaltado semipermanente en pies",
+        "description": "Pedicura con cuidado de cutículas y aplicación de esmalte semipermanente de larga duración.",
         "price": "Desde 15€"
       }
     }
@@ -98,12 +100,11 @@
     "title": "Visítanos",
     "subtitle": "Estamos convenientemente ubicados en el corazón de la ciudad",
     "contactInfo": "Información de Contacto",
-    "address": "123 Calle Belleza, Centro de la Ciudad, 10001",
+    "address": "Av. España, 1, 29680 Estepona, Málaga",
     "phone": "+34 655 71 91 45",
-    "email": "info@beautylashandnail.com",
+    "email": "alicianails.es@gmail.com",
     "hours": {
-      "weekdays": "Lunes - Viernes: 9am - 7pm",
-      "saturday": "Sábado: 10am - 6pm",
+      "weekdays": "Lunes - Sabado: 8am - 8pm",
       "sunday": "Domingo: Cerrado"
     },
     "bookAppointment": "Reservar Cita",

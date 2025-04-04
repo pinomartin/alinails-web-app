@@ -21,8 +21,10 @@
   "about": {
     "title": "About Alicia",
     "subtitle": "Passionate About Beauty",
-    "paragraph1": "With over 10 years of experience in the beauty industry, Alicia has mastered the art of nail design and eyelash extensions. Her passion for beauty and attention to detail ensures that every client leaves feeling confident and beautiful.",
-    "paragraph2": "Alicia continuously updates her skills with the latest techniques and trends, bringing innovative and high-quality services to her clients. She believes that beauty treatments should be a relaxing and enjoyable experience, which is why she has created a serene and welcoming environment for all her clients.",
+    "paragraph1": "Hello everyone! My name is Alicia, and the world of beauty has always been my passion.",
+    "paragraph2": "I started this journey over 20 years ago, and I can proudly say that I love my job. I specialize in manicures, makeup, and eyelash extensions, and I have recently started training in micropigmentation to continue offering the best to my clients. I love constantly learning and staying up to date with the latest techniques to provide high-quality service.",
+    "paragraph3": "For me, beauty is more than just an aesthetic detail—it’s a form of self-expression and self-care. I truly enjoy seeing how even the smallest changes can make someone feel more confident and happy. I am a kind and friendly person, and I always give my best to ensure that every visit is a special experience.",
+    "paragraph4": "For me, beauty is more than just an aesthetic detail—it’s a form of self-expression and self-care. I truly enjoy seeing how even the smallest changes can make someone feel more confident and happy. I am a kind and friendly person, and I always give my best to ensure that every visit is a special experience.",
     "stats": {
       "experience": "Years Experience",
       "clients": "Happy Clients",
@@ -35,14 +37,14 @@
     "bookNow": "Book Now",
     "items": {
       "manicure": {
-        "title": "Manicure",
-        "description": "Classic manicure with cuticle care and polish",
-        "price": "From $35"
+        "title": "Gel Polish Manicure",
+        "description": "Manicure with cuticle care and long-lasting gel polish application.",
+        "price": "From $15"
       },
       "gelPolish": {
-        "title": "Gel Polish",
-        "description": "Long-lasting gel polish with a perfect finish",
-        "price": "From $45"
+        "title": "Soft Gel",
+        "description": "Long-lasting soft gel with a perfect finish",
+        "price": "From $25"
       },
       "acrylicNails": {
         "title": "Acrylic Nails",
@@ -54,14 +56,14 @@
         "description": "Classic, hybrid, or volume lash extensions",
         "price": "From $80"
       },
-      "lashLiftTint": {
-        "title": "Lash Lift & Tint",
-        "description": "Natural lash enhancement with curl and color",
-        "price": "From $65"
+      "nailRemoval": {
+        "title": "Acrylic or Gel Polish Removal",
+        "description": "Gentle removal of gel polish or acrylic without damaging the natural nail.",
+        "price": "From $5"
       },
-      "nailArt": {
-        "title": "Nail Art",
-        "description": "Custom nail designs and artwork",
+      "pedicure": {
+        "title": "Gel Polish Pedicure",
+        "description": "Pedicure with cuticle care and long-lasting gel polish application.",
         "price": "From $15"
       }
     }
@@ -100,7 +102,7 @@
     "contactInfo": "Contact Information",
     "address": "123 Beauty Street, City Center, 10001",
     "phone": "+34 655 71 91 45",
-    "email": "info@beautylashandnail.com",
+    "email": "alicianails.es@gmail.com",
     "hours": {
       "weekdays": "Monday - Friday: 9am - 7pm",
       "saturday": "Saturday: 10am - 6pm",
