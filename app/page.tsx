@@ -1,29 +1,40 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { Instagram, MapPin, Phone, Mail, Clock } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import ServiceCard from "@/components/service-card"
-import TestimonialCard from "@/components/testimonial-card"
-import ImageCarousel from "@/components/image-carousel"
-import LanguageWrapper from "@/components/language-wrapper"
-import LanguageSelector from "@/components/language-selector"
-import MobileMenu from "@/components/mobile-menu"
-import BookingForm from "@/components/booking-form"
-import { useTranslation } from "@/hooks/use-translation"
+import { useState } from "react";
+import Image from "next/image";
+import { Instagram, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import ServiceCard from "@/components/service-card";
+import TestimonialCard from "@/components/testimonial-card";
+import ImageCarousel from "@/components/image-carousel";
+import LanguageWrapper from "@/components/language-wrapper";
+import LanguageSelector from "@/components/language-selector";
+import MobileMenu from "@/components/mobile-menu";
+import BookingForm from "@/components/booking-form";
+import { useTranslation } from "@/hooks/use-translation";
+import LOGO from "@/public/logo.jpg";
+import NAIL2 from "@/public/img/nails/02.jpg";
+import NAIL3 from "@/public/img/nails/03.jpg";
+import NAIL4 from "@/public/img/nails/04.jpg";
+import NAIL5 from "@/public/img/nails/05.jpg";
+import NAIL6 from "@/public/img/nails/06.jpg";
+import NAIL7 from "@/public/img/nails/07.jpg";
+import NAIL8 from "@/public/img/nails/08.jpg";
+import NAIL9 from "@/public/img/nails/09.jpg";
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const { t } = useTranslation()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <LanguageWrapper>
       <main className="min-h-screen bg-white">
         {/* WhatsApp Button */}
         <a
-          href={`https://wa.me/34655719145?text=${encodeURIComponent(t("whatsapp.message"))}`}
+          href={`https://wa.me/34655719145?text=${encodeURIComponent(
+            t("whatsapp.message")
+          )}`}
           className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg transition-transform hover:scale-110"
           aria-label={t("whatsapp.contact")}
           target="_blank"
@@ -45,7 +56,10 @@ export default function Home() {
         </a>
 
         {/* Mobile Menu */}
-        <MobileMenu isOpen={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
+        <MobileMenu
+          isOpen={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+        />
 
         {/* Header with Language Selector */}
         <header className="sticky top-0 z-40 border-b bg-white/80 backdrop-blur-md">
@@ -53,19 +67,24 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <div className="relative h-12 w-12 overflow-hidden rounded-full">
                 <Image
-                  src="/placeholder.svg?height=48&width=48"
+                  src={LOGO}
                   alt="Ali Nails Logo"
                   fill
                   className="object-cover"
                   priority
                 />
               </div>
-              <h1 className="text-xl font-bold text-pink-400 sm:text-2xl">Ali Nails</h1>
+              <h1 className="text-xl font-bold text-pink-400 sm:text-2xl">
+                Ali Nails
+              </h1>
             </div>
             <nav className="hidden md:block">
               <ul className="flex gap-8">
                 <li>
-                  <a href="#about" className="text-sm font-medium text-gray-700 transition-colors hover:text-pink-400">
+                  <a
+                    href="#about"
+                    className="text-sm font-medium text-gray-700 transition-colors hover:text-pink-400"
+                  >
                     {t("nav.about")}
                   </a>
                 </li>
@@ -108,9 +127,9 @@ export default function Home() {
               <Button
                 className="hidden bg-pink-400 text-white hover:bg-pink-500 md:block"
                 onClick={() => {
-                  const bookingForm = document.getElementById("booking-form")
+                  const bookingForm = document.getElementById("booking-form");
                   if (bookingForm) {
-                    bookingForm.scrollIntoView({ behavior: "smooth" })
+                    bookingForm.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
               >
@@ -155,15 +174,19 @@ export default function Home() {
             sizes="100vw"
           />
           <div className="container relative mx-auto flex h-full flex-col items-center justify-center px-4 text-center">
-            <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-6xl">{t("hero.title")}</h1>
-            <p className="mb-8 max-w-2xl text-lg text-gray-700">{t("hero.subtitle")}</p>
+            <h1 className="mb-4 text-4xl font-bold text-gray-800 md:text-6xl">
+              {t("hero.title")}
+            </h1>
+            <p className="mb-8 max-w-2xl text-lg text-gray-700">
+              {t("hero.subtitle")}
+            </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button
                 className="bg-pink-400 text-white hover:bg-pink-500"
                 onClick={() => {
-                  const bookingForm = document.getElementById("booking-form")
+                  const bookingForm = document.getElementById("booking-form");
                   if (bookingForm) {
-                    bookingForm.scrollIntoView({ behavior: "smooth" })
+                    bookingForm.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
               >
@@ -173,9 +196,9 @@ export default function Home() {
                 variant="outline"
                 className="border-pink-400 text-pink-400 hover:bg-pink-50"
                 onClick={() => {
-                  const servicesSection = document.getElementById("services")
+                  const servicesSection = document.getElementById("services");
                   if (servicesSection) {
-                    servicesSection.scrollIntoView({ behavior: "smooth" })
+                    servicesSection.scrollIntoView({ behavior: "smooth" });
                   }
                 }}
               >
@@ -190,7 +213,9 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-6xl">
               <div className="mb-12 text-center">
-                <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("about.title")}</h2>
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                  {t("about.title")}
+                </h2>
                 <div className="mx-auto h-1 w-20 bg-pink-400"></div>
               </div>
               <div className="flex flex-col items-center gap-8 md:flex-row">
@@ -204,21 +229,35 @@ export default function Home() {
                   />
                 </div>
                 <div className="w-full md:w-1/2">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">{t("about.subtitle")}</h3>
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    {t("about.subtitle")}
+                  </h3>
                   <p className="mb-4 text-gray-600">{t("about.paragraph1")}</p>
                   <p className="mb-6 text-gray-600">{t("about.paragraph2")}</p>
                   <div className="flex gap-4">
                     <div className="flex flex-col items-center">
-                      <span className="text-2xl font-bold text-pink-400">10+</span>
-                      <span className="text-sm text-gray-500">{t("about.stats.experience")}</span>
+                      <span className="text-2xl font-bold text-pink-400">
+                        10+
+                      </span>
+                      <span className="text-sm text-gray-500">
+                        {t("about.stats.experience")}
+                      </span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="text-2xl font-bold text-pink-400">5k+</span>
-                      <span className="text-sm text-gray-500">{t("about.stats.clients")}</span>
+                      <span className="text-2xl font-bold text-pink-400">
+                        5k+
+                      </span>
+                      <span className="text-sm text-gray-500">
+                        {t("about.stats.clients")}
+                      </span>
                     </div>
                     <div className="flex flex-col items-center">
-                      <span className="text-2xl font-bold text-pink-400">20+</span>
-                      <span className="text-sm text-gray-500">{t("about.stats.services")}</span>
+                      <span className="text-2xl font-bold text-pink-400">
+                        20+
+                      </span>
+                      <span className="text-sm text-gray-500">
+                        {t("about.stats.services")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -241,8 +280,12 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-3xl">
               <div className="mb-12 text-center">
-                <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("form.title")}</h2>
-                <p className="mx-auto max-w-2xl text-gray-600">{t("form.subtitle")}</p>
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                  {t("form.title")}
+                </h2>
+                <p className="mx-auto max-w-2xl text-gray-600">
+                  {t("form.subtitle")}
+                </p>
                 <div className="mx-auto mt-4 h-1 w-20 bg-pink-400"></div>
               </div>
               <BookingForm />
@@ -257,11 +300,11 @@ export default function Home() {
         <Footer />
       </main>
     </LanguageWrapper>
-  )
+  );
 }
 
 function ServicesSection() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const services = [
     {
@@ -300,15 +343,19 @@ function ServicesSection() {
       price: t("services.items.nailArt.price"),
       icon: "🎨",
     },
-  ]
+  ];
 
   return (
     <section id="services" className="bg-blue-50 py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("services.title")}</h2>
-            <p className="mx-auto max-w-2xl text-gray-600">{t("services.subtitle")}</p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">
+              {t("services.title")}
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-600">
+              {t("services.subtitle")}
+            </p>
             <div className="mx-auto mt-4 h-1 w-20 bg-pink-400"></div>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -319,38 +366,45 @@ function ServicesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function GallerySection() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const galleryImages = [
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-    "/placeholder.svg?height=400&width=600",
-  ]
+    NAIL2,
+    NAIL3,
+    NAIL4,
+    NAIL5,
+    NAIL6,
+    NAIL7,
+    NAIL8,
+    NAIL9,
+  ];
 
   return (
     <section id="gallery" className="py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("gallery.title")}</h2>
-            <p className="mx-auto max-w-2xl text-gray-600">{t("gallery.subtitle")}</p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">
+              {t("gallery.title")}
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-600">
+              {t("gallery.subtitle")}
+            </p>
             <div className="mx-auto mt-4 h-1 w-20 bg-pink-400"></div>
           </div>
           <ImageCarousel images={galleryImages} />
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function TestimonialsSection() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const testimonials = [
     {
@@ -374,15 +428,19 @@ function TestimonialsSection() {
       rating: 5,
       image: "/placeholder.svg?height=80&width=80",
     },
-  ]
+  ];
 
   return (
     <section id="testimonials" className="bg-pink-50 py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("testimonials.title")}</h2>
-            <p className="mx-auto max-w-2xl text-gray-600">{t("testimonials.subtitle")}</p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">
+              {t("testimonials.title")}
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-600">
+              {t("testimonials.subtitle")}
+            </p>
             <div className="mx-auto mt-4 h-1 w-20 bg-pink-400"></div>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -393,19 +451,23 @@ function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function LocationSection() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section id="location" className="py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-3xl font-bold text-gray-800">{t("location.title")}</h2>
-            <p className="mx-auto max-w-2xl text-gray-600">{t("location.subtitle")}</p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-800">
+              {t("location.title")}
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-600">
+              {t("location.subtitle")}
+            </p>
             <div className="mx-auto mt-4 h-1 w-20 bg-pink-400"></div>
           </div>
           <div className="flex flex-col gap-8 md:flex-row">
@@ -414,22 +476,31 @@ function LocationSection() {
                 {/* Map placeholder - would be replaced with an actual map component */}
                 <div className="flex h-full w-full items-center justify-center">
                   <MapPin className="h-12 w-12 text-gray-400" />
-                  <span className="ml-2 text-gray-500">{t("location.mapLoading")}</span>
+                  <span className="ml-2 text-gray-500">
+                    {t("location.mapLoading")}
+                  </span>
                 </div>
               </div>
             </div>
             <div className="w-full md:w-1/2">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">{t("location.contactInfo")}</h3>
+                  <h3 className="mb-4 text-2xl font-semibold text-gray-800">
+                    {t("location.contactInfo")}
+                  </h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <MapPin className="mr-3 h-5 w-5 text-pink-400" />
-                      <span className="text-gray-600">{t("location.address")}</span>
+                      <span className="text-gray-600">
+                        {t("location.address")}
+                      </span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="mr-3 h-5 w-5 text-pink-400" />
-                      <a href="tel:+34655719145" className="text-gray-600 hover:text-pink-400 transition-colors">
+                      <a
+                        href="tel:+34655719145"
+                        className="text-gray-600 hover:text-pink-400 transition-colors"
+                      >
                         {t("location.phone")}
                       </a>
                     </div>
@@ -454,9 +525,10 @@ function LocationSection() {
                   <Button
                     className="mt-6 w-full bg-pink-400 text-white hover:bg-pink-500"
                     onClick={() => {
-                      const bookingForm = document.getElementById("booking-form")
+                      const bookingForm =
+                        document.getElementById("booking-form");
                       if (bookingForm) {
-                        bookingForm.scrollIntoView({ behavior: "smooth" })
+                        bookingForm.scrollIntoView({ behavior: "smooth" });
                       }
                     }}
                   >
@@ -469,11 +541,11 @@ function LocationSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function Footer() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <footer className="bg-gray-900 py-12 text-white">
@@ -481,7 +553,9 @@ function Footer() {
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
             <div>
-              <h3 className="mb-2 text-2xl font-bold text-pink-400">Ali Nails</h3>
+              <h3 className="mb-2 text-2xl font-bold text-pink-400">
+                Ali Nails
+              </h3>
               <p className="text-gray-400">{t("footer.slogan")}</p>
             </div>
             <div className="flex gap-4">
@@ -540,6 +614,5 @@ function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

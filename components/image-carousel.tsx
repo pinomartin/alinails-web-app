@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/hooks/use-translation"
 
 interface ImageCarouselProps {
-  images: string[]
+  images: string[] | StaticImageData[]
 }
 
 export default function ImageCarousel({ images }: ImageCarouselProps) {
@@ -45,7 +45,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
                   alt={`Gallery image ${index + 1} - Nail and lash work example`}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 1200px"
+                  sizes="(max-width: 768px) 50vw, 1200px"
                   priority={index === 0}
                 />
               </div>
