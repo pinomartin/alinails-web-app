@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Ali Nails | Servicios Premium de Uñas y Extensiones de Pestañas",
+    "description": "Servicios premium de uñas y extensiones de pestañas diseñados para realzar tu belleza natural",
+    "keywords": "salón de uñas, extensiones de pestañas, salón de belleza, manicura, pedicura, uñas de gel, uñas acrílicas"
+  },
+  "nav": {
+    "about": "Sobre mi",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "testimonials": "Testimonios",
+    "location": "Ubicación",
+    "bookNow": "Reservar Ahora"
+  },
+  "hero": {
+    "title": "Eleva Tu Belleza",
+    "subtitle": "Servicios premium de uñas y extensiones de pestañas diseñados para realzar tu belleza natural",
+    "bookAppointment": "Reservar Cita",
+    "viewServices": "Ver Servicios"
+  },
+  "about": {
+    "title": "Un poco sobre mi",
+    "subtitle": "Apasionada Por La Belleza",
+    "paragraph1": "Con más de 10 años de experiencia en la industria de la belleza, Alicia ha dominado el arte del diseño de uñas y las extensiones de pestañas. Su pasión por la belleza y atención al detalle asegura que cada cliente se vaya sintiéndose confiada y hermosa.",
+    "paragraph2": "Alicia actualiza continuamente sus habilidades con las últimas técnicas y tendencias, brindando servicios innovadores y de alta calidad a sus clientes. Ella cree que los tratamientos de belleza deben ser una experiencia relajante y agradable, por lo que ha creado un ambiente sereno y acogedor para todos sus clientes.",
+    "stats": {
+      "experience": "Años de Experiencia",
+      "clients": "Clientes Satisfechos",
+      "services": "Servicios"
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Ofrecemos una amplia gama de servicios premium de uñas y pestañas para realzar tu belleza natural",
+    "bookNow": "Reservar Ahora",
+    "items": {
+      "manicure": {
+        "title": "Manicura",
+        "description": "Manicura clásica con cuidado de cutículas y esmalte",
+        "price": "Desde 35€"
+      },
+      "gelPolish": {
+        "title": "Esmalte de Gel",
+        "description": "Esmalte de gel de larga duración con un acabado perfecto",
+        "price": "Desde 45€"
+      },
+      "acrylicNails": {
+        "title": "Uñas Acrílicas",
+        "description": "Set completo de uñas acrílicas con opciones de diseño",
+        "price": "Desde 60€"
+      },
+      "eyelashExtensions": {
+        "title": "Extensiones de Pestañas",
+        "description": "Extensiones de pestañas clásicas, híbridas o volumen",
+        "price": "Desde 80€"
+      },
+      "lashLiftTint": {
+        "title": "Lifting y Tinte de Pestañas",
+        "description": "Realce natural de pestañas con rizo y color",
+        "price": "Desde 65€"
+      },
+      "nailArt": {
+        "title": "Arte de Uñas",
+        "description": "Diseños personalizados y arte en uñas",
+        "price": "Desde 15€"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Nuestra Galería",
+    "subtitle": "Explora nuestro portafolio de diseños de uñas y extensiones de pestañas",
+    "previous": "Imagen anterior",
+    "next": "Siguiente imagen",
+    "goToSlide": "Ir a la diapositiva"
+  },
+  "testimonials": {
+    "title": "Testimonios de Clientes",
+    "subtitle": "Mira lo que nuestros clientes dicen sobre su experiencia",
+    "items": {
+      "sarah": {
+        "name": "Sarah M.",
+        "text": "¡Alicia es increíble! Mis uñas nunca se han visto mejor. El salón es limpio, moderno y muy relajante.",
+        "profession": "Diseñadora de Moda"
+      },
+      "jessica": {
+        "name": "Jessica T.",
+        "text": "He estado haciéndome las pestañas aquí durante meses. ¡Los resultados son siempre perfectos y duran mucho tiempo!",
+        "profession": "Ejecutiva de Marketing"
+      },
+      "emma": {
+        "name": "Emma L.",
+        "text": "¡El mejor salón de uñas de la ciudad! La atención al detalle es increíble y el personal es muy amable.",
+        "profession": "Profesora"
+      }
+    }
+  },
+  "location": {
+    "title": "Visítanos",
+    "subtitle": "Estamos convenientemente ubicados en el corazón de la ciudad",
+    "contactInfo": "Información de Contacto",
+    "address": "123 Calle Belleza, Centro de la Ciudad, 10001",
+    "phone": "+34 655 71 91 45",
+    "email": "info@beautylashandnail.com",
+    "hours": {
+      "weekdays": "Lunes - Viernes: 9am - 7pm",
+      "saturday": "Sábado: 10am - 6pm",
+      "sunday": "Domingo: Cerrado"
+    },
+    "bookAppointment": "Reservar Cita",
+    "mapLoading": "Cargando Mapa..."
+  },
+  "footer": {
+    "slogan": "Elevando la belleza, un cliente a la vez",
+    "rights": "Todos los derechos reservados.",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "whatsapp": {
+    "contact": "Contáctanos por WhatsApp",
+    "message": "Hola, estoy interesada en tus servicios de belleza. ¿Podrías proporcionarme más información?"
+  },
+  "form": {
+    "title": "Reserva Tu Cita",
+    "subtitle": "Completa el formulario a continuación para programar tu cita",
+    "name": "Nombre Completo",
+    "phone": "Número de Teléfono",
+    "email": "Correo Electrónico",
+    "service": "Servicio",
+    "selectService": "Selecciona un servicio",
+    "date": "Fecha",
+    "selectDate": "Selecciona una fecha",
+    "time": "Hora",
+    "selectTime": "Selecciona una hora",
+    "submit": "Reservar vía WhatsApp",
+    "submitting": "Procesando...",
+    "success": "¡Gracias! Tu solicitud de cita ha sido enviada.",
+    "errors": {
+      "required": "Este campo es obligatorio",
+      "invalid": "Por favor, introduce un valor válido"
+    }
+  }
+}
+

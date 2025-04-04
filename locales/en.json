@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Ali Nails | Premium Nail and Eyelash Services",
+    "description": "Premium nail and eyelash extension services tailored to enhance your natural beauty",
+    "keywords": "nail salon, eyelash extensions, beauty salon, manicure, pedicure, gel nails, acrylic nails"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "location": "Location",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Elevate Your Beauty",
+    "subtitle": "Premium nail and eyelash extension services tailored to enhance your natural beauty",
+    "bookAppointment": "Book Appointment",
+    "viewServices": "View Services"
+  },
+  "about": {
+    "title": "About Alicia",
+    "subtitle": "Passionate About Beauty",
+    "paragraph1": "With over 10 years of experience in the beauty industry, Alicia has mastered the art of nail design and eyelash extensions. Her passion for beauty and attention to detail ensures that every client leaves feeling confident and beautiful.",
+    "paragraph2": "Alicia continuously updates her skills with the latest techniques and trends, bringing innovative and high-quality services to her clients. She believes that beauty treatments should be a relaxing and enjoyable experience, which is why she has created a serene and welcoming environment for all her clients.",
+    "stats": {
+      "experience": "Years Experience",
+      "clients": "Happy Clients",
+      "services": "Services"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We offer a wide range of premium nail and eyelash services to enhance your natural beauty",
+    "bookNow": "Book Now",
+    "items": {
+      "manicure": {
+        "title": "Manicure",
+        "description": "Classic manicure with cuticle care and polish",
+        "price": "From $35"
+      },
+      "gelPolish": {
+        "title": "Gel Polish",
+        "description": "Long-lasting gel polish with a perfect finish",
+        "price": "From $45"
+      },
+      "acrylicNails": {
+        "title": "Acrylic Nails",
+        "description": "Full set of acrylic nails with design options",
+        "price": "From $60"
+      },
+      "eyelashExtensions": {
+        "title": "Eyelash Extensions",
+        "description": "Classic, hybrid, or volume lash extensions",
+        "price": "From $80"
+      },
+      "lashLiftTint": {
+        "title": "Lash Lift & Tint",
+        "description": "Natural lash enhancement with curl and color",
+        "price": "From $65"
+      },
+      "nailArt": {
+        "title": "Nail Art",
+        "description": "Custom nail designs and artwork",
+        "price": "From $15"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "subtitle": "Browse through our portfolio of nail designs and eyelash extensions",
+    "previous": "Previous image",
+    "next": "Next image",
+    "goToSlide": "Go to slide"
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "subtitle": "See what our clients have to say about their experience",
+    "items": {
+      "sarah": {
+        "name": "Sarah M.",
+        "text": "Alicia is amazing! My nails have never looked better. The salon is clean, modern, and so relaxing.",
+        "profession": "Fashion Designer"
+      },
+      "jessica": {
+        "name": "Jessica T.",
+        "text": "I've been getting my lashes done here for months. The results are always perfect and last so long!",
+        "profession": "Marketing Executive"
+      },
+      "emma": {
+        "name": "Emma L.",
+        "text": "Best nail salon in town! The attention to detail is incredible and the staff is so friendly.",
+        "profession": "Teacher"
+      }
+    }
+  },
+  "location": {
+    "title": "Visit Us",
+    "subtitle": "We're conveniently located in the heart of the city",
+    "contactInfo": "Contact Information",
+    "address": "123 Beauty Street, City Center, 10001",
+    "phone": "+34 655 71 91 45",
+    "email": "info@beautylashandnail.com",
+    "hours": {
+      "weekdays": "Monday - Friday: 9am - 7pm",
+      "saturday": "Saturday: 10am - 6pm",
+      "sunday": "Sunday: Closed"
+    },
+    "bookAppointment": "Book Appointment",
+    "mapLoading": "Map Loading..."
+  },
+  "footer": {
+    "slogan": "Elevating beauty, one client at a time",
+    "rights": "All rights reserved.",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "Twitter"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  },
+  "whatsapp": {
+    "contact": "Contact us on WhatsApp",
+    "message": "Hello, I'm interested in your beauty services. Can you provide more information?"
+  },
+  "form": {
+    "title": "Book Your Appointment",
+    "subtitle": "Fill out the form below to schedule your appointment",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "service": "Service",
+    "selectService": "Select a service",
+    "date": "Date",
+    "selectDate": "Select a date",
+    "time": "Time",
+    "selectTime": "Select a time",
+    "submit": "Book via WhatsApp",
+    "submitting": "Processing...",
+    "success": "Thank you! Your appointment request has been sent.",
+    "errors": {
+      "required": "This field is required",
+      "invalid": "Please enter a valid value"
+    }
+  }
+}
+
