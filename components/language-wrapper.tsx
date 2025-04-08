@@ -26,6 +26,11 @@ export default function LanguageWrapper({ children }: { children: React.ReactNod
     if (metaKeywords) {
       metaKeywords.setAttribute("content", t("meta.keywords"))
     }
+    // Update meta keywords
+    const googleSiteVerification = document.querySelector('meta[name="google-site-verification"]')
+    if (googleSiteVerification) {
+      googleSiteVerification.setAttribute("content", t("meta.verification.google"))
+    }
 
     // Update HTML lang attribute
     document.documentElement.lang = language
