@@ -19,7 +19,7 @@
     "viewServices": "View Services"
   },
   "about": {
-    "title": "About Alicia",
+    "title": "About Me",
     "subtitle": "Passionate About Beauty",
     "paragraph1": "Hello everyone! My name is Alicia, and the world of beauty has always been my passion.",
     "paragraph2": "I started this journey over 20 years ago, and I can proudly say that I love my job. I specialize in manicures, makeup, and eyelash extensions, and I have recently started training in micropigmentation to continue offering the best to my clients. I love constantly learning and staying up to date with the latest techniques to provide high-quality service.",
@@ -80,19 +80,19 @@
     "subtitle": "See what our clients have to say about their experience",
     "items": {
       "sarah": {
-        "name": "Sarah M.",
-        "text": "Alicia is amazing! My nails have never looked better. The salon is clean, modern, and so relaxing.",
+        "name": "Carmen C.",
+        "text": "I'm delighted with Alicia. I started going a few years ago and I find her super professional and meticulous. She also uses high-quality products. My nails look beautiful every time I visit. I highly recommend her.",
         "profession": "Fashion Designer"
       },
       "jessica": {
-        "name": "Jessica T.",
-        "text": "I've been getting my lashes done here for months. The results are always perfect and last so long!",
-        "profession": "Marketing Executive"
+        "name": "Alba D.",
+        "text": "I've never had a better experience with manicures, pedicures, gel nails with all kinds of designs, and lash extensions. The owner is lovely and very professional, with many years of experience. It's a trustworthy, high-quality place where I’ve had all sorts of nail art done — from 3D gel designs to hand-drawn art and effects like the baby boomer style. 100% recommended.",
+        "profession": "Teacher"
       },
       "emma": {
-        "name": "Emma L.",
-        "text": "Best nail salon in town! The attention to detail is incredible and the staff is so friendly.",
-        "profession": "Teacher"
+        "name": "Greta G.",
+        "text": "Excellent!! The place is super clean and cozy, Ali is very professional, sweet, and detail-oriented. I was absolutely thrilled! Thank you so much.",
+        "profession": "Midwife"
       }
     }
   },

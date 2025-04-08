@@ -23,6 +23,7 @@ import NAIL6 from "@/public/img/nails/06.jpg";
 import NAIL7 from "@/public/img/nails/07.jpg";
 import NAIL8 from "@/public/img/nails/08.jpg";
 import NAIL9 from "@/public/img/nails/09.jpg";
+import PROFILE from "@/public/img/about/perfil.jpeg";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <LanguageWrapper>
-      <a 
+      <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white"
       >
@@ -85,16 +86,13 @@ export default function Home() {
                 Ali Nails
               </h1>
             </div>
-            <nav className="hidden md:block" role="navigation" aria-label="Main navigation">
+            <nav
+              className="hidden md:block"
+              role="navigation"
+              aria-label="Main navigation"
+            >
               <ul className="flex gap-8">
-                <li>
-                  <a
-                    href="#about"
-                    className="text-sm font-medium text-gray-700 transition-colors hover:text-pink-400"
-                  >
-                    {t("nav.about")}
-                  </a>
-                </li>
+                
                 <li>
                   <a
                     href="#services"
@@ -117,6 +115,14 @@ export default function Home() {
                     className="text-sm font-medium text-gray-700 transition-colors hover:text-pink-400"
                   >
                     {t("nav.testimonials")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="text-sm font-medium text-gray-700 transition-colors hover:text-pink-400"
+                  >
+                    {t("nav.about")}
                   </a>
                 </li>
                 <li>
@@ -215,6 +221,17 @@ export default function Home() {
           </div>
         </section>
 
+
+        {/* Services Section */}
+        <ServicesSection />
+
+        {/* Gallery Section */}
+        <GallerySection />
+
+        {/* Testimonials Section */}
+        <TestimonialsSection />
+
+        
         {/* About Section */}
         <section id="about" className="py-16 md:py-20">
           <div className="container mx-auto px-4">
@@ -226,14 +243,15 @@ export default function Home() {
                 <div className="mx-auto h-1 w-20 bg-pink-400"></div>
               </div>
               <div className="flex flex-col items-center gap-8 md:flex-row">
-                <div className="relative h-80 w-full overflow-hidden rounded-lg md:w-1/2">
-                  <Image
-                    src="/placeholder.svg?height=600&width=800"
-                    alt="Alicia - Professional Nail and Lash Artist with over 10 years of experience"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
+                <div className="flex w-full items-center justify-center md:w-1/2">
+                  <div className="relative h-[200px] w-[200px] md:h-[400px] md:w-[400px] overflow-hidden rounded-full shadow-lg">
+                    <Image
+                      src={PROFILE}
+                      alt="Alicia - Professional Nail and Lash Artist with over 10 years of experience"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
                 <div className="w-full md:w-1/2">
                   <h3 className="mb-4 text-2xl font-semibold text-gray-800">
@@ -274,15 +292,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* Services Section */}
-        <ServicesSection />
-
-        {/* Gallery Section */}
-        <GallerySection />
-
-        {/* Testimonials Section */}
-        <TestimonialsSection />
 
         {/* Booking Form Section */}
         <section id="booking" className="py-16 bg-pink-50 md:py-20">
@@ -421,21 +430,24 @@ function TestimonialsSection() {
       name: "Sarah M.",
       text: "Alicia is amazing! My nails have never looked better. The salon is clean, modern, and so relaxing.",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
+      image:
+        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
     {
       key: "jessica",
       name: "Jessica T.",
       text: "I've been getting my lashes done here for months. The results are always perfect and last so long!",
       rating: 5,
-      image: "https://plus.unsplash.com/premium_photo-1683817397904-d4465651a071?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
+      image:
+        "https://plus.unsplash.com/premium_photo-1683817397904-d4465651a071?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
     {
       key: "emma",
       name: "Emma L.",
       text: "Best nail salon in town! The attention to detail is incredible and the staff is so friendly.",
       rating: 5,
-      image: "https://plus.unsplash.com/premium_photo-1668485966810-bcaa10f47781?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
+      image:
+        "https://plus.unsplash.com/premium_photo-1668485966810-bcaa10f47781?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGdpcmwlMjBwcm9maWxlfGVufDB8fDB8fHww",
     },
   ];
 
@@ -621,7 +633,9 @@ function Footer() {
               © {new Date().getFullYear()} Ali Nails. {t("footer.rights")}
             </p>
             <p className="text-sm text-gray-400">
-             <a target="_blank" href="https://clickandfix.netlify.app">Click & Fix</a>
+              <a target="_blank" href="https://clickandfix.netlify.app">
+                Click & Fix
+              </a>
             </p>
           </div>
         </div>

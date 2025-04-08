@@ -80,19 +80,19 @@
     "subtitle": "Mira lo que nuestros clientes dicen sobre su experiencia",
     "items": {
       "sarah": {
-        "name": "Sarah M.",
-        "text": "¡Alicia es increíble! Mis uñas nunca se han visto mejor. El salón es limpio, moderno y muy relajante.",
+        "name": "Carmen C.",
+        "text": "Estoy encantada con Alicia . Empecé a ir hace unos años y me parece super profesional y cuidadosa, además usa productos de calidad Me deja las uñas preciosas cada vez que voy. La recomiendo.",
         "profession": "Diseñadora de Moda"
       },
       "jessica": {
-        "name": "Jessica T.",
-        "text": "He estado haciéndome las pestañas aquí durante meses. ¡Los resultados son siempre perfectos y duran mucho tiempo!",
-        "profession": "Ejecutiva de Marketing"
+        "name": "Alba D.",
+        "text": "No me han hecho la manicura, pedicura, uñas de gel con todo tipo de diseños y las pestañas mejor en ningún sitio. La dueña es encantadora y muy profesional, con muchos años de experiencia. Sitio de confianza y de mucha calidad en el que me han hecho todo tipo de diseños en las manos ya sea en relieve con gel, dibujos a mano o efectos como el efecto baby boomer entre otros. 100% recomendable.",
+        "profession": "Profesora"
       },
       "emma": {
-        "name": "Emma L.",
-        "text": "¡El mejor salón de uñas de la ciudad! La atención al detalle es increíble y el personal es muy amable.",
-        "profession": "Profesora"
+        "name": "Greta G.",
+        "text": "Excelente!! El lugar super limpio y cálido, Ali muy profesional, amorosa y detallista, quedé encantada! Muchas gracias.",
+        "profession": "Matrona"
       }
     }
   },

@@ -17,8 +17,6 @@ import { CalendarIcon, Clock } from "lucide-react"
 
 interface FormData {
   name: string
-  phone: string
-  email: string
   service: string
   date: Date | undefined
   time: string
@@ -26,8 +24,6 @@ interface FormData {
 
 const initialFormData: FormData = {
   name: "",
-  phone: "",
-  email: "",
   service: "",
   date: undefined,
   time: "",
@@ -84,11 +80,6 @@ export default function BookingForm() {
     const newErrors: Partial<FormData> = {}
 
     if (!formData.name.trim()) newErrors.name = "required"
-    if (!formData.phone.trim()) newErrors.phone = "required"
-    else if (!/^\+?[0-9\s\-()]{8,}$/.test(formData.phone)) newErrors.phone = "invalid"
-
-    if (!formData.email.trim()) newErrors.email = "required"
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) newErrors.email = "invalid"
 
     if (!formData.service) newErrors.service = "required"
     if (!formData.date) newErrors.date = "required"
@@ -113,8 +104,8 @@ export default function BookingForm() {
     // Create WhatsApp message
     const message =
       language === "es"
-        ? `Hola, estoy interesado en tus servicios:\n\n*Nombre:* ${formData.name}\n*Teléfono:* ${formData.phone}\n*Email:* ${formData.email}\n*Servicio:* ${services.find((s) => s.value === formData.service)?.label}\n*Fecha:* ${formattedDate}\n*Hora:* ${formData.time}`
-        : `Hello, I'm interested in your services:\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Email:* ${formData.email}\n*Service:* ${services.find((s) => s.value === formData.service)?.label}\n*Date:* ${formattedDate}\n*Time:* ${formData.time}`
+        ? `Hola, estoy interesada en tus servicios:\n\n*Nombre:* ${formData.name}\n*Servicio:* ${services.find((s) => s.value === formData.service)?.label}\n*Fecha:* ${formattedDate}\n*Hora:* ${formData.time}`
+        : `Hello, I'm interested in your services:\n\n*Name:* ${formData.name}\n*Service:* ${services.find((s) => s.value === formData.service)?.label}\n*Date:* ${formattedDate}\n*Time:* ${formData.time}`
 
     // Encode the message for WhatsApp
     const encodedMessage = encodeURIComponent(message)
@@ -139,30 +130,9 @@ export default function BookingForm() {
         {errors.name && <p className="text-xs text-red-500">{t(`form.errors.${errors.name}`)}</p>}
       </div>
 
-      <div className="space-y-2">
-        <Label htmlFor="phone">{t("form.phone")}</Label>
-        <Input
-          id="phone"
-          type="tel"
-          value={formData.phone}
-          onChange={(e) => handleChange("phone", e.target.value)}
-          className={errors.phone ? "border-red-500" : ""}
-        />
-        {errors.phone && <p className="text-xs text-red-500">{t(`form.errors.${errors.phone}`)}</p>}
-      </div>
+      
 
-      <div className="space-y-2">
-        <Label htmlFor="email">{t("form.email")}</Label>
-        <Input
-          id="email"
-          type="email"
-          value={formData.email}
-          onChange={(e) => handleChange("email", e.target.value)}
-          className={errors.email ? "border-red-500" : ""}
-        />
-        {errors.email && <p className="text-xs text-red-500">{t(`form.errors.${errors.email}`)}</p>}
-      </div>
-
+      
       <div className="space-y-2">
         <Label htmlFor="service">{t("form.service")}</Label>
         <Select value={formData.service} onValueChange={(value) => handleChange("service", value)}>

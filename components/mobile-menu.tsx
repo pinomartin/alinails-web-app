@@ -34,10 +34,10 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   if (!isOpen) return null
 
   const menuItems = [
-    { href: "#about", label: t("nav.about") },
     { href: "#services", label: t("nav.services") },
     { href: "#gallery", label: t("nav.gallery") },
     { href: "#testimonials", label: t("nav.testimonials") },
+    { href: "#about", label: t("nav.about") },
     { href: "#location", label: t("nav.location") },
   ]
 
